@@ -1,0 +1,58 @@
+.about-us-wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 25% auto;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "title-about-us title-about-us"
+    "about-us-img about-us-description";
+  height: 387px;
+  background-color: #f6f6f6;
+}
+
+.title-about-us {
+  grid-area: title-about-us;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.about-us-img {
+  grid-area: about-us-img;
+}
+
+.about-us-description {
+  grid-area: about-us-description;
+}
+
+.about-ud-wrapper-descriptions {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85px 95px 50px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "big-title-about-us"
+    "description-about-us"
+    "about-us-detail";
+  padding-top: 2%;
+}
+
+.big-title-about-us {
+  grid-area: big-title-about-us;
+  width: 290px;
+}
+
+.description-about-us {
+  grid-area: description-about-us;
+  color: #6c767e;
+  width: 355px;
+}
+
+.about-us-detail {
+  grid-area: about-us-detail;
+  padding-top: 20px;
+}
+
+.img-about-us-style {
+  margin-left: 40px;
+  border-radius: 5px;
+}

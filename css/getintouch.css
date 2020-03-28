@@ -1,0 +1,21 @@
+.get-in-touch-wrapper {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 90px auto 38px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    ". title-get-in-touch ."
+    ". form-get-in-touch .";
+}
+
+.title-get-in-touch {
+  grid-area: title-get-in-touch;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.form-get-in-touch {
+  grid-area: form-get-in-touch;
+  background-color: white;
+  padding: 35px;
+}

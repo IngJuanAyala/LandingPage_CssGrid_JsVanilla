@@ -1,0 +1,87 @@
+.features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 50px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "title-features"
+    "content-features"
+    ".";
+  background-color: #f6f6f6;
+}
+
+.title-features {
+  grid-area: title-features;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.content-features {
+  grid-area: content-features;
+}
+
+.content-features-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  height: auto;
+  grid-template-columns: repeat(3, 215px);
+  grid-template-rows: repeat(2, 206px);
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-item {
+  background: white;
+}
+
+.feature-item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 44px 26px 50px 33px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "icon-item-feature"
+    "title-item-feature"
+    "descr-item-feature"
+    "learn-more-item-feature";
+  padding: 22px;
+}
+
+.icon-item-feature {
+  grid-area: icon-item-feature;
+  text-align: left;
+}
+
+.title-item-feature {
+  grid-area: title-item-feature;
+  text-align: left;
+}
+
+.descr-item-feature {
+  grid-area: descr-item-feature;
+}
+
+.learn-more-item-feature {
+  grid-area: learn-more-item-feature;
+  color: #00d3b5;
+  padding-top: 20px;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.icon-feature {
+  color: white;
+  background: #00d3b5;
+  display: inline-block;
+  border-radius: 21px;
+  padding: 0.1em 0.3em;
+  font-size: 20px;
+}
+
+.descr-features {
+  color: #6c767e;
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.9;
+}

@@ -1,0 +1,18 @@
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90px auto;
+  grid-column-gap: 2px;
+  grid-template-areas: "titleTestimonials" "descripTestimonials";
+}
+
+.titleTestimonials {
+  grid-area: titleTestimonials;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.descripTestimonials {
+  grid-area: descripTestimonials;
+  text-align: center;
+}

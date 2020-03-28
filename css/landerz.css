@@ -1,0 +1,89 @@
+.landerz-wrapper {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 20px auto;
+  grid-column-gap: 2px;
+  grid-template-areas: "titleLanderz titleLanderz" "lndr-descrption lndr-img";
+}
+
+.titleLanderz {
+  grid-area: titleLanderz;
+  text-align: center;
+}
+
+.lndr-descrption {
+  grid-area: lndr-descrption;
+}
+
+.lndr-img {
+  grid-area: lndr-img;
+}
+
+.landerz-wrapper-descriptions {
+  display: grid;
+  grid-template-columns: 77%;
+  grid-template-rows: 145px 80px 50px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "big-title-Landerz"
+    "description-landerz"
+    "btn-landerz";
+  padding-top: 13%;
+}
+
+.big-title-Landerz {
+  grid-area: big-title-Landerz;
+}
+
+.description-landerz {
+  grid-area: description-landerz;
+  color: #6c767e;
+}
+
+.btn-landerz {
+  grid-area: btn-landerz;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .landerz-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 445px 280px;
+    grid-template-areas:
+      "titleLanderz"
+      "lndr-img"
+      "lndr-descrption";
+    height: 940px;
+  }
+
+  .landerz-wrapper-descriptions {
+    grid-template-columns: 100%;
+    grid-template-rows: 142px 190px 50px;
+    grid-template-areas:
+      "big-title-Landerz"
+      "description-landerz"
+      "btn-landerz";
+    padding-top: 0%;
+  }
+
+  .description-landerz {
+    font-size: 32px;
+  }
+
+  .btn-get-started {
+    width: 199.96px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .btn-landerz {
+    padding-top: 10px;
+  }
+
+  .titleLanderz {
+    font-size: 40px;
+  }
+
+  .big-title-1 {
+    font-size: 62px;
+  }
+}

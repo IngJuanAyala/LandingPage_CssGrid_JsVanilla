@@ -1,0 +1,82 @@
+.create-wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: auto;
+  grid-column-gap: 2px;
+  grid-template-areas: "create-img create-description";
+}
+
+.create-img {
+  grid-area: create-img;
+}
+
+.create-description {
+  grid-area: create-description;
+}
+
+.create-wrapper-descriptions {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 105px 80px 60px 130px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "big-title-create"
+    "description-create"
+    "check-items"
+    "user-detail";
+  padding-top: 8%;
+}
+
+.big-title-create {
+  grid-area: big-title-create;
+}
+
+.description-create {
+  grid-area: description-create;
+  color: #6c767e;
+}
+
+.check-items {
+  grid-area: check-items;
+  color: #6c767e;
+}
+
+.user-detail {
+  grid-area: user-detail;
+  width: 96%;
+  height: 145px;
+  box-shadow: 1px 1px 4px #dcdcdc;
+}
+
+.user-detail-wrapper {
+  display: grid;
+  grid-template-columns: 70px 285px;
+  grid-template-rows: 62px 75px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "img-user name-user"
+    "descr-user descr-user";
+  padding: 12px;
+  height: 160px;
+}
+
+.img-user {
+  grid-area: img-user;
+  text-align: center;
+}
+
+.name-user {
+  grid-area: name-user;
+}
+
+.descr-user {
+  grid-area: descr-user;
+  color: #6c767e;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+.img-user-style {
+  border-radius: 30px;
+  padding: 0.1em 0.3em;
+}
